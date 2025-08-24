@@ -1,0 +1,73 @@
+#footer {
+    background-color: #2A2A2A;
+    padding: 3rem 1rem;
+    color: #ABABAB; // màu chữ mặc định
+    font-size: 14px; // font-size nhỏ lại cho toàn bộ footer
+    margin-top: 200px;
+
+    .row {
+        .first {
+            margin-right: 80px;
+        }
+    }
+
+    .footer-title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #e9e9e9; // màu đen cho h3
+        font-size: 16px;
+    }
+
+    .footer-contact {
+        font-weight: 500;
+        margin-top: 1.5rem;
+    }
+
+    .footer-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #e9e9e9; // màu hover mới
+            }
+        }
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.2rem;
+
+        svg {
+            cursor: pointer;
+            color: #ABABAB;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: #e9e9e9;
+            }
+        }
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    // Responsive padding
+    @media (max-width: 768px) {
+        padding: 2rem 1rem;
+    }
+
+    @media (max-width: 576px) {
+        text-align: center;
+
+        .footer-socials {
+            justify-content: center;
+        }
+    }
+}

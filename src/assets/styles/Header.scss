@@ -1,0 +1,114 @@
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+    .transparent-navbar {
+        background-color: transparent !important;
+    }
+
+    .label {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #373737 !important;
+    }
+
+    .nav-item-custom {
+        padding-right: 1rem;
+        font-weight: 500;
+        color: #373737 !important;
+
+        &:hover {
+            color: #373737 !important;
+            border-bottom: 2px solid #373737;
+        }
+
+        &.active {
+            font-weight: 600;
+            color: #373737;
+            border-bottom: 2px solid #373737;
+        }
+    }
+
+    .form-control {
+        background-color: #fff;
+        border-radius: 0;
+        padding: 5px 10px;
+        color: #373737;
+
+        &::placeholder {
+            color: #9a9a9a;
+        }
+    }
+
+    .btn-outline-light {
+        border: none;
+        color: #373737;
+
+        &:hover {
+            background-color: #f0f0f0;
+            color: #373737;
+        }
+    }
+
+    .btn-menu-dropdown {
+        background-color: transparent;
+        color: #373737;
+        border: none;
+
+        &::after {
+            display: none !important;
+        }
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .search-input-group {
+        transition: all 0.3s ease-in-out;
+
+        .form-control {
+            color: #373737;
+            background-color: #fff;
+
+            &::placeholder {
+                color: #9a9a9a;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        &.show {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+        }
+
+        .dropdown-item {
+            color: #373737;
+
+            &:hover {
+                background-color: #f8f8f8;
+            }
+
+            &:active {
+                background-color: #eaeaea;
+            }
+        }
+    }
+
+    .icon-group {
+        svg {
+            color: #373737;
+
+            &:hover {
+                color: #1f1f1f;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: #fff !important;
+    }
+}
